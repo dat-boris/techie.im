@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:700,400);
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  font-family: Karla, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #828282;
+}
+a,
+.title {
+  font-weight: bold;
+  color: #525252;
+  text-decoration: none;
+  -webkit-transition: border-color 0.15s;
+  -moz-transition: border-color 0.15s;
+  -ms-transition: border-color 0.15s;
+  -o-transition: border-color 0.15s;
+  transition: border-color 0.15s;
+}
+a:hover {
+  text-decoration: underline;
+}
+h4 {
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+p {
+  max-width: 505.26315789px;
+}
+section {
+  height: 100%;
+  padding-top: 25%;
+}
+.content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.red {
+  height: 4px;
+  background-color: #ff5248;
+}
+.menu-outer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+}
+.menu-inner {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+.icons {
+  position: absolute;
+  top: 0.5rem;
+  left: calc(50% - 94px);
+}
+.icon {
+  display: inline-block;
+  width: 35px;
+  height: 46px;
+  margin-right: 16px;
+  background-size: 22px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s;
+  -moz-transition: background-color 0.15s;
+  -ms-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  transition: background-color 0.15s;
+}
+.icon.about {
+  background-image: url('/images/icon-01.svg');
+}
+.icon.tools {
+  background-image: url('/images/icon-03.svg');
+}
+.icon.internet {
+  background-image: url('/images/icon-02.svg');
+}
+.icon.city {
+  background-image: url('/images/icon-04.svg');
+}
+.icon:last-child {
+  margin-right: 0;
+}
+.icon.active {
+  height: 45px;
+  border-bottom: 1px solid #d0d0d0;
+  cursor: pointer;
+}
+.socials .social-icon {
+  display: inline-block;
+  vertical-align: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 1rem;
+  opacity: 0.7;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.socials .social-icon.github {
+  background-image: url('images/social-01.svg');
+}
+.socials .social-icon.dribbble {
+  background-image: url('images/social-02.svg');
+}
+.socials .social-icon.twitter {
+  background-image: url('images/social-03.svg');
+}
+@media screen and (max-width: 960px) {
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .menu-outer {
+    left: 2rem;
+    right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .icons {
+    left: auto;
+    right: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .icons {
+    left: calc(50% - 94px);
+    top: 3rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  section:first-child {
+    padding-top: 50%;
+  }
+  .title-outer {
+    text-align: center;
+  }
+  .menu-inner {
+    border: none;
+  }
+  .menu-outer {
+    height: 94px;
+    border-bottom: 1px solid #f4f4f4;
+  }
+}
+/**
+ * Work in progress
+ * Style inspired from http://kylestetz.com/ 
+ */
