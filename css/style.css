@@ -113,25 +113,36 @@ section {
   border-bottom: 1px solid #d0d0d0;
   cursor: pointer;
 }
-.socials .social-icon {
+.social-icon {
   display: inline-block;
   vertical-align: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-right: 1rem;
   opacity: 0.7;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-.socials .social-icon.github {
+.social-icon.github {
   background-image: url('images/social-01.svg');
 }
-.socials .social-icon.dribbble {
+.social-icon.dribbble {
   background-image: url('images/social-02.svg');
 }
-.socials .social-icon.twitter {
+.social-icon.twitter {
   background-image: url('images/social-03.svg');
+  opacity: 0.2;
+}
+.pathful-icon {
+  display: inline-block;
+  vertical-align: center;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('images/pathful-logo-grey.png');
 }
 @media screen and (max-width: 960px) {
   .content {
