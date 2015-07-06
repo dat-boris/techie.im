@@ -130,7 +130,7 @@ section {
 }
 .social-icon.twitter {
   background-image: url('images/twitter.svg');
-  opacity: 0.2;
+  opacity: 0.15;
 }
 .social-icon.linkedin {
   background-image: url('images/linkedin.png');
