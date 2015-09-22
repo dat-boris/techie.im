@@ -45,7 +45,12 @@ p {
   max-width: 505.26315789px;
 }
 section {
+  padding-top: 5%;
   height: 100%;
+  /* Allow separate page scroll effect */
+  padding-bottom: 50%;
+}
+section.extra-top {
   padding-top: 25%;
 }
 .content {
@@ -186,3 +191,38 @@ section {
  * Work in progress
  * Style inspired from http://kylestetz.com/ 
  */
+
+a.home_arrow {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/**
+ Gallery cell work
+ */
+.gallery-cell {
+    padding-left: 50px;
+}
+
+.gallery-cell.small-cell {
+    width: 400px;
+}
+
+.gallery-cell img.small-image {
+    max-height: 80px;
+}
+
+.gallery-cell a.cell-wrapper {
+  font-weight: normal;
+  font-size: 16px;
+  color: #828282;
+}
+
+.gallery-cell.photo-cell {
+    padding-left: 0px;
+}
+
+.gallery-cell.photo-cell img {
+    height: 200px;
+}
+
