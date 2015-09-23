@@ -8,6 +8,10 @@ $(function() {
         $('html, body').animate({
             scrollTop: $(target).offset().top
         }, 500);
+
+        // track the click event
+        analytics.track(target.substr(1));
+
         return false;
     });
 
