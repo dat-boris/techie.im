@@ -54,7 +54,7 @@ $(function() {
     }
 
     getFlickrGallery("#flickr-gallery-hk", "85734830@N00", "72157650070566351");
-    getFlickrGallery("#flickr-gallery-climbing", "85734830@N00", "72157645571447909");
+    getFlickrGallery("#flickr-gallery-climbing", "85734830@N00", "72157656652450713");
     getFlickrGallery("#flickr-gallery-travelling", "85734830@N00", "72157649654809407");
 
 

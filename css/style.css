@@ -206,6 +206,7 @@ a.home_arrow {
 
 .gallery-cell.small-cell {
     width: 400px;
+    font-size: 16px;
 }
 
 .gallery-cell img.small-image {
@@ -214,7 +215,6 @@ a.home_arrow {
 
 .gallery-cell a.cell-wrapper {
   font-weight: normal;
-  font-size: 16px;
   color: #828282;
 }
 

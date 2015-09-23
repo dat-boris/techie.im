@@ -1,4 +1,5 @@
 Makefile
 .s3cfg
+.idea
 *.swp
 *.swo
