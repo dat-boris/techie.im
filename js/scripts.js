@@ -35,7 +35,7 @@ $(function() {
                     for (var i = 0; i < items.length; ++i) {
                         var item = items[i];
                         html += "<div class='gallery-cell photo-cell'>";
-                        html += "<a href='" + item.link + "'><img data-flickity-lazyload='" + item.media.m + "' alt='' /></a>";
+                        html += "<a target='_blank' href='" + item.link + "'><img data-flickity-lazyload='" + item.media.m + "' alt='' /></a>";
                         html += "</div>";
                     }
 
