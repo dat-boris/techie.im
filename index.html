@@ -2,10 +2,17 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
-  <title>Hello Boris</title>
+  <title>Boris here</title>
   <meta name="description" content="Boris Lau is a developer working on his next project." />
   <!-- <link rel="shortcut icon" href="/favicon.ico"/> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css">
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/scripts.js"></script>
 
   <script type="text/javascript">
 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
@@ -19,13 +26,18 @@ analytics.page()
 
   <div class="content">
 
-    <section data-section="about">
+    <section id="about" class="extra-top">
       <h4>Hi there, I am Boris.</h4>
 	  <p>I am a pythonista who co-created 
 	  <a target="_blank" href="http://www.pathful.com">Pathful</a>
       <a target="_blank" href="http://www.pathful.com" target="_blank" class="pathful-icon"></a>
 	  </p>
-	  <p>I enjoy <a target="_blank" href="https://www.virusbtn.com/conference/vb2007/abstracts/Lau.xml">reverse engineering</a>, <a target="_blank" href="https://www.flickr.com/photos/boris_da_chinaman/albums">photography</a>, climbing, and watching films.</p>
+	  <p>I enjoy
+          <!-- <a data-action="scroll_to" data-target="[data-section=photography]" href="#id">photography</a>, -->
+          <a data-action="scroll_to" href="#photography">photography</a>,
+          <a data-action="scroll_to" href="#video">shooting videos</a>,
+          and <a data-action="scroll_to" href="#technical">computing security</a>
+          .</p>
       <p>We should <a target="_blank" href="mailto:boris@techie.im?subject=Just%20saying%20hi">chat</a>
       <a target="_blank" href="https://twitter.com/sketchytechky" target="_blank" class="social-icon twitter"></a>
       <a target="_blank" href="https://ca.linkedin.com/in/boriswlau" target="_blank" class="social-icon linkedin"></a>
@@ -33,7 +45,128 @@ analytics.page()
       <h4><span>:-)</span></h4>
     </section>
 
+
+    <section id="photography">
+      <h4>Photography </h4>
+      <p>
+        Passionate about outdoor photography, putting photographs together to tell a story.
+      </p>
+
+      <p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/2014_Hong_Kong_protests">Occupy Central Movement</a> - A photo series to capture the political chaos in Hong Kong 2014.
+      </p>
+      <div id="flickr-gallery-hk" class="gallery delay-flickity"></div>
+
+      <p>
+         <a target="_blank" href="http://squamishrampage.ca">Squamish Rampage 2014</a> - an outdoor climbing competition.  We using alternate the photos between 2 differnet hues
+          to give a pace to the story.
+      </p>
+
+      <div id="flickr-gallery-climbing" class="gallery delay-flickity"></div>
+
+      <p>
+          Travelling photography
+      </p>
+      <div id="flickr-gallery-travelling" class="gallery delay-flickity"></div>
+
+      <h4> <a class="home_arrow" data-action="scroll_to" href="#about">&#8624;</a> </h4>
+
+    </section>
+
+
+    <section id="video">
+      <h4>Videos</h4>
+      <p>
+        A self-taught videographer, with ability to shoot on my own or work with team. Finding the small moments that matters.
+      </p>
+
+        <div class="gallery js-flickity"
+                data-flickity-options='{ "cellAlign": "left", "contain": true, "freeScroll": true, "prevNextButtons": true, "pageDots": false }'>
+            <div class="gallery-cell">
+              <iframe src="https://player.vimeo.com/video/139036428?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p>Videographer for Squamish Rampage 2015</p>
+            </div>
+
+            <div class="gallery-cell">
+              <iframe src="https://player.vimeo.com/video/138261320?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p>Producer - Pidgin and Wings documentary</p>
+            </div>
+
+            <div class="gallery-cell">
+              <iframe src="https://player.vimeo.com/video/140133185?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p>Camera-op and Editor - VFS summer-intensive 2015</p>
+            </div>
+        </div>
+
+      <h4> <a class="home_arrow" data-action="scroll_to" href="#about">&#8624;</a> </h4>
+
+    </section>
+
+
+
+    <section id="technical">
+      <h4>Technical</h4>
+      <p>
+        Before founding <a href="http://www.pathful.com">pathful.com</a> <a target="_blank" href="http://www.pathful.com" target="_blank" class="pathful-icon"></a>, I had dedicated my time on reverse engineering, and here are the list of research presentations.
+      </p>
+        <div class="gallery js-flickity"
+                data-flickity-options='{ "cellAlign": "left", "contain": true, "freeScroll": true, "prevNextButtons": true, "pageDots": false }'>
+            <div class="gallery-cell small-cell">
+                <a target="_blank" class="cell-wrapper" href="https://www.virusbtn.com/conference/vb2007/abstracts/Lau.xml">
+                    <img class="small-image" src="img/vb.gif" />
+                </a>
+                <p>DSD-Tracer</p>
+                <p>
+                    Cross-domain research inspired from Software Testing, this is a presentation which propose solution to breakdown barrier between dynamic and static analysis.
+                </p>
+            </div>
+
+            <div class="gallery-cell small-cell">
+                <a target="_blank" class="cell-wrapper" href="http://2008.caro.org/program/dealing-with-virtualization-packers">
+                    <img class="small-image" src="img/caro.png" />
+                </a>
+                <p>Dealing with Virtualization packers</p>
+                <p>
+                    Virtual machine have been used in programming environment, which malware/packers also uses it for obfuscation purpose. This is a theoretical paper to deal with analysis of such virtual machine.
+                </p>
+            </div>
+
+            <div class="gallery-cell small-cell">
+                <a target="_blank" class="cell-wrapper" href="https://www.virusbtn.com/pdf/conference_slides/2008/BorisLau-VB2008.pdf">
+                    <img class="small-image" src="img/vb.gif" />
+                </a>
+                <p>Race to zero with online scanners</p>
+                <p>
+                    Presentation and visualisation (using processing.java framework) of how malware author tried to escape anti-virus detection through obfuscation of their sample.
+                </p>
+            </div>
+
+            <div class="gallery-cell small-cell">
+                <a target="_blank" class="cell-wrapper" href="http://link.springer.com/article/10.1007%2Fs11416-008-0096-y">
+                    <img class="small-image" src="img/eicar.png" />
+                </a>
+                <p>Measuring virtual machine detection</p>
+                <p>
+                    Measurement of 2008 landscape of Virtual machine detection in malware.
+                </p>
+            </div>
+
+        </div>
+      <h4> <a class="home_arrow" data-action="scroll_to" href="#about">&#8624;</a> </h4>
+
+    </section>
+
+
+    <section>
+      <p>We should <a target="_blank" href="mailto:boris@techie.im?subject=Just%20saying%20hi">chat</a>
+      <a target="_blank" href="https://twitter.com/sketchytechky" target="_blank" class="social-icon twitter"></a>
+      <a target="_blank" href="https://ca.linkedin.com/in/boriswlau" target="_blank" class="social-icon linkedin"></a>
+	  </p>
+      <h4> <a class="home_arrow" data-action="scroll_to" href="#about">&#8624;</a> </h4>
+    </section>
+
   </div>
+
 
 </body>
 </html>
