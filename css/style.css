@@ -127,12 +127,6 @@ section.extra-top {
   background-position: center;
   background-repeat: no-repeat;
 }
-.social-icon.github {
-  background-image: url('images/social-01.svg');
-}
-.social-icon.dribbble {
-  background-image: url('images/social-02.svg');
-}
 .social-icon.twitter {
   background-image: url('images/twitter.svg');
   opacity: 0.15;
