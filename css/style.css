@@ -140,6 +140,9 @@ section.extra-top {
 .social-icon.linkedin {
   background-image: url('images/linkedin.png');
 }
+.social-icon.github {
+  background-image: url('images/github.png');
+}
 .pathful-icon {
   display: inline-block;
   vertical-align: center;
